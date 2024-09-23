@@ -1,18 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  color: black;
-  background-color: white;
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 2em;
 }
 
 
- body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.3em 1em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.87);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.samosa {
+    height: 15em;
+    padding: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.samosa:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Grow on hover */
+}
+
+.samosa:active {
+    transform: scale(0.95); /* Shrink on click */
 }
